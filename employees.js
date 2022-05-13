@@ -20,7 +20,15 @@
 */
 
 //CODE HERE
-
+class Employee {
+    constructor(name, shifts) {
+        this.name = name
+        this.shifts = shifts
+    }
+    getSchedule() {
+        console.log (`${this.name} works at ${this.shifts}`)
+    }
+}
 
 
 /*
@@ -34,14 +42,15 @@
 */
 
 //CODE HERE
-
+let empOne = new Employee("George", "4:30pm");
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
 //CODE HERE
-
+empOne.getSchedule()
+console.log(empOne)
 
 /*
     Make a copy of the empOne object
@@ -56,8 +65,11 @@
 */
 
 //CODE HERE
+let empTwo = {...empOne}
+console.log(empTwo)
 
-
+let empTwo = Nick
+console.log(Nick)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -83,7 +95,16 @@
 */
 
 //CODE HERE
-
+class Manager extends Employee {
+    constructor(name, shifts, arrEmployees) {
+        super(name, shifts)
+        this.arrEmployees = arrEmployees;
+    }
+    getEmployees() {
+        console.log(`${this.name} manages ${this.arrEmployees}`)
+        addEmplyees(arrEmplyees.push(emp)
+    }
+    
 
 
 /*

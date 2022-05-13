@@ -22,10 +22,11 @@
 */
 
 //CODE HERE
+const greetUser = (username) => {
+    return(`welcome back ${username}`)
+}
 
-
-
-
+console.log(username = 'Andrew')
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -50,7 +51,16 @@
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
+const canWeDeliver = (zipCode) => {
+    for (i = 0; i < deliveryAreaZipCodes.length; i++) {
+        for (j = i + 1; i < deliveryAreaZipCodes.length; i++)
+            if (zipCode[i] === zipCode[j]) console.log('You are in our delivery zone') 
+    } else {
+        console.log('Sorry, we cant deliver to that address')
+    }
+    
 
+    console.log(zipCode)
 
 
 /* 
@@ -71,6 +81,14 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 */
 
 // CODE HERE
+    const canWeDeliverTwo = (arr, cb) => {
+        if (arr.includes(deliveryAreaZipCodes.length) === true) {
+        console.log('you are in our delivery area')
+        } else {
+            console.log('you are not in our delivery area')
+        }
+        return cb(arr.includes(deliveryAreaZipCodes))
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -107,7 +125,10 @@ const deals = [
 */
 
 //CODE HERE
-
+deals.replace(deals.title, 'iteself')
+console.log(deals)
+let itself = deals.replace("15% off!", "10% off");
+console.log(deals)
 
 
 /*
@@ -124,3 +145,6 @@ const deals = [
 */
 
 //CODE HERE
+deals.replace(deals.title, 'itself')
+deals.replace("March", "April")
+const dealsCleared = deals.replace(/\s/g, '')
