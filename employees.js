@@ -25,8 +25,8 @@ class Employee {
         this.name = name
         this.shifts = shifts
     }
-    getSchedule() {
-        console.log (`${this.name} works at ${this.shifts}`)
+    getSchedule = () => {
+       return console.log (`${this.name} works at ${this.shifts}`)
     }
 }
 
@@ -42,15 +42,18 @@ class Employee {
 */
 
 //CODE HERE
-let empOne = new Employee("George", "4:30pm");
+let empOne = new Employee("Jess", "weekday mornings", "weekend afternoons");
+
+
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
 //CODE HERE
-empOne.getSchedule()
-console.log(empOne)
+empOne.getSchedule();
+// empOne.getSchedule()
+// console.log(empOne)
 
 /*
     Make a copy of the empOne object
@@ -65,11 +68,13 @@ console.log(empOne)
 */
 
 //CODE HERE
-let empTwo = {...empOne}
+let empTwo = { ...empOne }
+empTwo.name = 'Nick'
+
 console.log(empTwo)
 
-let empTwo = Nick
-console.log(Nick)
+// let empTwo = Nick
+// console.log(Nick)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -95,15 +100,15 @@ console.log(Nick)
 */
 
 //CODE HERE
-class Manager extends Employee {
-    constructor(name, shifts, arrEmployees) {
-        super(name, shifts)
-        this.arrEmployees = arrEmployees;
-    }
-    getEmployees() {
-        console.log(`${this.name} manages ${this.arrEmployees}`)
-        addEmplyees(arrEmplyees.push(emp)
-    }
+// class Manager extends Employee {
+//     constructor(name, shifts, arrEmployees) {
+//         super(name, shifts)
+//         this.arrEmployees = arrEmployees;
+//     }
+//     getEmployees() {
+//         console.log(`${this.name} manages ${this.arrEmployees}`)
+//         addEmplyees(arrEmplyees.push(emp)
+//     }
     
 
 

@@ -23,11 +23,12 @@
 
 //CODE HERE
 const greetUser = (username) => {
-    return(`welcome back ${username}`)
+    return console.log (`welcome back ${username}`)
 }
 
-console.log(username = 'Andrew')
 
+greetUser('Andrew')
+// parameter is the placeholder we use when we create the function and the arguement is the actual value we pass when we call the function
 //////////////////PROBLEM 2////////////////////
 /* 
     Below is an array of zip codes that are in
@@ -51,16 +52,18 @@ console.log(username = 'Andrew')
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-const canWeDeliver = (zipCode) => {
+const canWeDeliver = zipCode => {
     for (i = 0; i < deliveryAreaZipCodes.length; i++) {
-        for (j = i + 1; i < deliveryAreaZipCodes.length; i++)
-            if (zipCode[i] === zipCode[j]) console.log('You are in our delivery zone') 
-    } else {
-        console.log('Sorry, we cant deliver to that address')
+        // for (j = i + 1; i < deliveryAreaZipCodes.length; i++)
+        if (deliveryAreaZipCodes[i] === zipCode) {
+            return console.log('You are in our delivery zone')
+        } 
+        
     }
-    
+    return console.log ('you are not in our delivery zone! Sorry')
+}
 
-    console.log(zipCode)
+canWeDeliver(78767)
 
 
 /* 
@@ -81,15 +84,24 @@ const canWeDeliver = (zipCode) => {
 */
 
 // CODE HERE
-    const canWeDeliverTwo = (arr, cb) => {
-        if (arr.includes(deliveryAreaZipCodes.length) === true) {
-        console.log('you are in our delivery area')
-        } else {
-            console.log('you are not in our delivery area')
-        }
-        return cb(arr.includes(deliveryAreaZipCodes))
-}
+    // const canWeDeliverTwo = (arr, cb) => {
+    //     if (arr.includes(deliveryAreaZipCodes.length) === true) {
+    //     console.log('you are in our delivery area')
+    //     } else {
+    //         console.log('you are not in our delivery area')
+    //     }
+    //     return cb(arr.includes(deliveryAreaZipCodes))
+// 
 
+const canWeDeliverTwo = zipCode => {
+    if (deliveryAreaZipCodes.includes(zipCode)) {
+        return console.log('We can deliver to you!')
+    } else {
+        return console.log('sorry we cant deliver to you!')
+    }
+}
+canWeDeliverTwo(85205)
+canWeDeliverTwo(90393)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -125,12 +137,13 @@ const deals = [
 */
 
 //CODE HERE
-deals.replace(deals.title, 'iteself')
-console.log(deals)
-let itself = deals.replace("15% off!", "10% off");
-console.log(deals)
+// deals.replace(deals.title, 'iteself')
+// console.log(deals)
+// let itself = deals.replace("15% off!", "10% off");
+// console.log(deals)
 
-
+deals[0].title = deals[0].title.replace('15', '10')
+console.log(deals)
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -145,6 +158,8 @@ console.log(deals)
 */
 
 //CODE HERE
-deals.replace(deals.title, 'itself')
-deals.replace("March", "April")
-const dealsCleared = deals.replace(/\s/g, '')
+// deals.replace(deals.title, 'itself')
+// deals.replace("March", "April")
+// const dealsCleared = deals.replace(/\s/g, '')
+deals[0].desc = deals[1].desc.replace('March', 'April').trim()
+console.log(deals)
