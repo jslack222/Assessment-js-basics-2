@@ -100,16 +100,22 @@ console.log(empTwo)
 */
 
 //CODE HERE
-// class Manager extends Employee {
-//     constructor(name, shifts, arrEmployees) {
-//         super(name, shifts)
-//         this.arrEmployees = arrEmployees;
-//     }
-//     getEmployees() {
-//         console.log(`${this.name} manages ${this.arrEmployees}`)
-//         addEmplyees(arrEmplyees.push(emp)
-//     }
-    
+
+class Manager extends Employee {
+    constructor(name, shifts, arrEmployees){
+        super(name, shifts)
+        this.arrEmployees = arrEmployees;
+    }
+    addEmployees(emp) {
+        this.arrEmployees.push(emp)
+    }
+    getEmployees() {
+        console.log(`${this.name} manages ${this.arrEmployees}`)
+    }
+}
+console.log('____________________________________')
+
+
 
 
 /*
@@ -124,7 +130,15 @@ console.log(empTwo)
 */
 
 //CODE HERE
+console.log(Manager);
+let Manager1 = new Manager();
+Manager1.name = "Georgie";
+console.log(Manager1);
+Manager1.shifts = "Afternoon to closing";
+Manager1.employees = 'Bill and Richie'
+console.log(Manager1);
 
+console.log
 
 /*
     Call the `getEmployees` method on the
@@ -132,7 +146,7 @@ console.log(empTwo)
 */
 
 //CODE HERE
-
+Manager.getEmployees
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
@@ -140,7 +154,7 @@ console.log(empTwo)
 */
 
 //CODE HERE 
-
+Manager.addEmployees('johnny')
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -148,3 +162,4 @@ console.log(empTwo)
 */
 
 //CODE HERE
+Manager.getEmployees

@@ -81,10 +81,22 @@ console.log(calcFinalPrice(10, 1, .10))
 
     Your object should have at least 4 properties. 
 */
+const example = [
+    {
+        name: 'Example', 
+        paymentType: 'Money',
+        dineInorTakeOut: 'food',
+        phoneNumber: '1-800-Example'
+    }
+]
+
 
 /*
     TEXT ANSWER HERE
-
+// I chose to have there name so the restraunt could call there name if the customer is waiting in the foyer area. 
+// for increased efficiency and convenience I added a phone numbrer so they can call the customer when there order is ready. 
+// Payment type so that we could be ready to swipe or deal with cash, plus having card functionality allows them to pay over the phone so the customer can just grab there order if they get takeout. 
+// I chose to ask dine in or take out so they could have the order/table ready for the customer when they arrive.
 */
 
 /*
@@ -93,3 +105,11 @@ console.log(calcFinalPrice(10, 1, .10))
 */
 
 //CODE HERE
+const model = [
+  {
+    name: "Johnny Swim",
+    payementType: "Credit",
+    dineInorTakeOut: "Dine in",
+    phoneNumber: "512-337-4849",
+  },
+];

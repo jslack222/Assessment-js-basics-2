@@ -107,15 +107,16 @@ const foodArr = {
     popularity: 10,
     rating: 10,
     tags: ['fast food', 'american']
-},
-{
-    name: "Calzone",
-  price: 11.58,
+}, 
+
+    {
+    name: 'Calzone',
+    price: 11.58,
   category: "entree",
   popularity: 8,
   rating: 8,
   tags: ["fast food", "american"],
-},
+}, 
 {
   name: "mac & cheese",
   price: 5.99,
@@ -123,7 +124,7 @@ const foodArr = {
   popularity: 10,
   rating: 9,
   tags: ["fast food", "american"],
-},
+}, 
  {
   name: "fries",
   price: 2.99,
@@ -131,7 +132,7 @@ const foodArr = {
   popularity: 10,
   rating: 10,
   tags: ["fast food", "american"],
-},
+}, 
  {
   name: "chicken sandwhich",
   price: 12,
